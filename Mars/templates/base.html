@@ -29,7 +29,9 @@
 <main role="main" class="container">
     {% block content %}{% endblock %}
     <p>
+        {% if current_user.is_authenticated %}
             <a class="btn btn-success " href="/works">Добавить Работу</a>
+        {% endif %}
         </p>
 </main>
 </body>
